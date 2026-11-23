@@ -1,0 +1,138 @@
+/* Ravintolasivu – yhteinen tyylitiedosto (värit, header, footer) */
+
+/* ---------- Värit ---------- */
+:root {
+  --vari-paa: #1f3d2b;
+  --vari-korostus: #d4a84b;
+  --vari-tausta: #f3f5f1;
+  --vari-teksti: #1c2620;
+  --vari-footer: #ffffff;
+  --fontti: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- Perusasetukset ---------- */
+* {
+   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fontti);
+  color: var(--vari-teksti);
+  background-color: var(--vari-tausta);
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: var(--vari-paa);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.logo span {
+  color: var(--vari-korostus);
+}
+
+.main-nav ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; 
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--vari-korostus);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--vari-korostus);
+  color: var(--vari-paa);
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background-color: var(--vari-footer);
+  border-top: 4px solid var(--vari-korostus);
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.site-footer h3 { 
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--vari-paa);
+}
+.site-footer p { 
+  margin: 0.2rem 0;
+  color: #555; 
+}
+.site-footer a {
+  color: var(--vari-paa);
+  font-weight: 600; 
+}
+.footer-bottom { 
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--vari-paa);
+  color: #c9d3cc;
+  font-size: 0.85rem;
+}
+
+
+/* ---------- Sivukohtaiset tyylit ---------- */
+
+/* --- Etusivu --- */
+
+
+/* --- Menu --- */
+
+
+/* --- Pöytävaraus --- */
